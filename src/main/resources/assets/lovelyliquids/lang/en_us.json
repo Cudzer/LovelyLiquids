@@ -1,4 +1,11 @@
 {
   "itemgroup.lovelyliquids" : "Lovely Liquids Items",
-  "item.lovelyliquids.hops_seed" : "Hops Seed"
+  "item.lovelyliquids.hops_seed" : "Hops Seed",
+  "item.lovelyliquids.hops" : "Hops",
+  "block.lovelyliquids.compressed_hops" : "Compressed Hops",
+  "item.lovelyliquids.agave" : "Agave",
+  "item.lovelyliquids.grape_seed" : "Grape Seed",
+  "item.lovelyliquids.grape": "Grape",
+  "item.lovelyliquids.anise_seed": "Anise Seed",
+  "item.lovelyliquids.anise": "Anise"
 }

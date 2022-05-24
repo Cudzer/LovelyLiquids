@@ -16,6 +16,8 @@ public class ModItems
 
     public static final RegistryObject<Item> HOPS_SEED = ITEMS.register("hops_seed",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> HOPS = ITEMS.register("hops",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
 
     public static void register(IEventBus eventBus)
     {

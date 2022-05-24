@@ -1,5 +1,6 @@
 package com.cudzer.lovelyliquids;
 
+import com.cudzer.lovelyliquids.block.ModBlocks;
 import com.cudzer.lovelyliquids.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
@@ -32,6 +33,7 @@ public class LovelyLiquidsMain
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::setup);
 
