@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "lovelyliquids:items/hops_seed"
+    "layer0": "lovelyliquids:item/hops_seed"
   }
 }
