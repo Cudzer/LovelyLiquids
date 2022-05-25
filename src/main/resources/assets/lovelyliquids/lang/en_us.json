@@ -1,5 +1,5 @@
 {
-  "itemgroup.lovelyliquids" : "Lovely Liquids Items",
+  "itemGroup.lovely_liquids_tab" : "Lovely Liquids Items",
   "item.lovelyliquids.hops_seed" : "Hops Seed",
   "item.lovelyliquids.hops" : "Hops",
   "block.lovelyliquids.compressed_hops" : "Compressed Hops",
@@ -7,5 +7,11 @@
   "item.lovelyliquids.grape_seed" : "Grape Seed",
   "item.lovelyliquids.grape": "Grape",
   "item.lovelyliquids.anise_seed": "Anise Seed",
-  "item.lovelyliquids.anise": "Anise"
+  "item.lovelyliquids.anise": "Anise",
+  "item.lovelyliquids.ph_meter" : "Digital PH Meter",
+  "item.lovelyliquids.ph_meter.no_valid_target" : "You cannot test the PH level of this block",
+
+  "tooltip.lovelyliquids.ph_meter.tooltip" : "Press §eSHIFT§r for more information!",
+  "tooltip.lovelyliquids.ph_meter.tooltip.shift" : "Used to measure the PH levels of certain blocks. Right click to analyse",
+  "tooltip.lovelyliquids.block.compressed_hops" : "Break down to process in the vat"
 }

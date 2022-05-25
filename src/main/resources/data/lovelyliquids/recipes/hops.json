@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "lovelyliquids:compressed_hops"
+    }
+  ],
+  "result": {
+    "item": "lovelyliquids:hops",
+    "count": 9
+  }
+}
