@@ -1,0 +1,6 @@
+{
+  "parent" : "minecraft:block/crop",
+  "textures" : {
+    "crop" : "lovelyliquids:block/grape_stage4"
+  }
+}

@@ -1,6 +1,7 @@
 package com.cudzer.lovelyliquids.block;
 
 import com.cudzer.lovelyliquids.LovelyLiquidsMain;
+import com.cudzer.lovelyliquids.block.custom.HopsPlantBlock;
 import com.cudzer.lovelyliquids.item.ModCreativeModeTab;
 import com.cudzer.lovelyliquids.item.ModItems;
 import net.minecraft.network.chat.Component;
@@ -8,6 +9,7 @@ import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,9 +29,20 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.CACTUS)
                     .strength(0.7f)), ModCreativeModeTab.LOVELY_LIQUID_TAB, "tooltip.lovelyliquids.block.compressed_hops");
 
+    public static final RegistryObject<Block> HOPS_PLANT = registerBlockWithoutItem("hops_plant",
+            () -> new HopsPlantBlock( BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
+    public static final RegistryObject<Block> GRAPE_PLANT = registerBlockWithoutItem("grape_plant",
+            () -> new HopsPlantBlock( BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
     public static void register(IEventBus eventBus)
     {
         BLOCKS.register(eventBus);
+    }
+
+    private static <T extends Block>RegistryObject<T>   registerBlockWithoutItem(String name, Supplier<T> block)
+    {
+        return BLOCKS.register(name, block);
     }
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
